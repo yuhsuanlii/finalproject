@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>CSS滑鼠滑過變更連結文字顏色</title>
+<style type="text/css">
+a {color:#414141; text-decoration:none;}
+a:hover{color:#4c7cbd; text-decoration:none;}
+.title {
+ font-family: "Cooper Std Black";
+ font-size: 16px;
+ color:#333;
+}
+.overtitle{
+ font-family: "Cooper Std Black";
+ font-size: 16px;
+ color:#999;
+}
+
+</style>
+</head>
+<body>
+
+
+<a href='http://www.google.com.tw'>Google</a>
+<div class="title" onmouseout="this.className='title'" onmouseover="this.className='overtitle'">Google</div>
+
+<div class="modal fade" id="lb-langage" tabindex="-1">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Language</h4>
+                <a class="close" href="#" data-dismiss="modal" aria-label="Close">
+                    <i class="icon-close"></i>
+                </a>
+            </div>
+            <div class="modal-body text-gray-800">
+                <div class="quality-box text-center">
+                    <div class="inner-box">
+                        <a class="btn-quality text-uppercase d-block py-3 border-bottom"
+                            href="/language?c=zh-TW&amp;r=https%3A%2F%2Fwww.mouggan.com%2Fen-us%2Frecent">繁中</a>
+                        <a class="btn-quality text-uppercase d-block py-3 "
+                            href="/language?c=en-US&amp;r=https%3A%2F%2Fwww.mouggan.com%2Fen-us%2Frecent">EN</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

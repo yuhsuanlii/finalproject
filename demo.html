@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="slider">
+        <div>
+          <p>123<br>456</p>
+        </div>
+        <div>
+          <p>abcdefg</p>
+        </div>
+        <div>
+          <p>BC</p>
+        </div>
+        <div>
+          <p>DEF</p>
+        </div>
+        <div>
+          <p>5</p>
+        </div>
+        <div>
+          <p>6</p>
+        </div>
+      </div>
+
+
+<script>
+    
+    $('.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+//   autoplay: true,
+  autoplaySpeed: 2000,    
+});
+
+$('.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+//   autoplay: true,
+  autoplaySpeed: 2000,    
+  vertical: true,
+});
+
+function equalheight() {
+    $('.slider').each(function (index) {
+        var maxHeight = 0;
+        $(this).find('.slick-slide').height('auto');
+        $(this).find('.slick-slide').each(function (index) {
+            if ($(this).height() > maxHeight)
+                maxHeight = $(this).height();
+        });
+        $(this).find('.slick-slide').height(maxHeight);
+    });
+}
+ 
+// slider 
+$('.slider').on('init', function(event, slick){
+  equalheight();
+});
+ 
+ 
+$('.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+//   autoplay: true,
+  autoplaySpeed: 2000,    
+  vertical: true,
+});
+</script>
+
+</body>
+
+</html>

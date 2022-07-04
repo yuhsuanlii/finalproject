@@ -1,0 +1,72 @@
+<div id="main-wrap">
+    <div class="container-fluid">
+        <div class="content-block content-xs">
+            <form class="show-block show-register hide" id="form-register" action="/en-us/signup" method="post">
+                <input name="__RequestVerificationToken" type="hidden" value="kQL5ftH6SdwnAH0nN0pYaGCf-BMmTK2SRFzZk5gYux5OYzJ_Oo7O_pGDNK3zgz5eIXKZO--lBLqMepmA44TzI9lH5HJQ7N-8cN5Odtc6jK41" />
+                <div class="register-switch page-title title text-center">
+                    <a class="btn-register-switch btn-switch-block d-inline-block mx-4 h1" href="#" data-block=".show-login" data-name=".show-block">Sign In </a>
+                    <a class="btn-register-switch active btn-switch-block d-inline-block mx-4 h1" href="#" data-block=".show-register" data-name=".show-block">New customer</a>
+                </div>
+                <div class="form-g">
+                    <input class="form-control" type="text" placeholder="帳號/信箱" name="account" required>
+                </div>
+                <div class="form-g">
+                    <input class="form-control" id="password-signup" type="password" placeholder="密碼(6碼至15碼英數字)" name="password" autocomplete="off" required>
+                </div>
+                <div class="form-g">
+                    <input class="form-control" id="check-ps" type="password" name="checkpassword" placeholder="再次輸入密碼" autocomplete="off" required>
+                </div>
+                <div class="my-5">
+                    <div class="controls-item custom-ui text-center row">
+                        <div class="col-md-5 p-0 col-12 d-md-block d-none">會員及購物同意條款</div>
+                        <div class="col-md-7 p-0 col-12 custom-ui">
+                            <input class="checkbox" id="agree-privacy" name="agree-privacy" type="checkbox">
+                            <label for="agree-privacy"><span class="d-inline-block align-middle"><a class="font-underline margin-h-5 text-underline" href="https://www.mouggan.com/policy">我已閱讀並同意會員約定條款說明</a></span></label>
+                        </div>
+                    </div>
+                </div>
+                
+                <input class="btn btn-outline-primary btn-block btn-lg" type="submit" value="註冊">
+            </form>
+            <form class="show-block show-login" id="form-user-login" action="/en-us/login" method="post">
+                <input name="__RequestVerificationToken" type="hidden" value="kQL5ftH6SdwnAH0nN0pYaGCf-BMmTK2SRFzZk5gYux5OYzJ_Oo7O_pGDNK3zgz5eIXKZO--lBLqMepmA44TzI9lH5HJQ7N-8cN5Odtc6jK41" />
+                <div class="register-switch page-title title text-center mb-5">
+                    <a class="btn-register-switch btn-switch-block active d-inline-block mx-4 h1" href="#" data-block=".show-login" data-name=".show-block">Sign In </a>
+                    <a class="btn-register-switch btn-switch-block d-inline-block mx-4 h1" href="#" data-block=".show-register" data-name=".show-block">New customer</a>
+                </div>
+                <div class="form-g">
+                    <input class="form-control" id="user-email" type="email" placeholder="會員帳號" value="" name="account" required>
+                </div>
+                <div class="form-g">
+                    <input class="form-control" id="user-password" type="password" placeholder="密碼" name="password" autocomplete="off" required>
+                </div>
+                <div class="my-5">
+                    <input class="btn btn-outline-primary btn-block show-block show-login btn-lg" type="submit" value="會員登入">
+                </div>
+                <div class="form-g">
+                    <div class="float-left">
+                                                    <a class="d-inline-block mr-4" href="/en-us/Login/OAuth/1">
+                                <i class="icon-fb" style="width:30px; height: 30px"></i>
+                            </a>
+                    </div>
+                    <div class="float-right">
+                        <a class="btn-switch-block" href="#" data-block=".show-forgot" data-name=".show-block">忘記密碼</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+            <form class="show-block show-forgot hide" id="form-user-forgot" action="" method="post">
+                <div class="page-title h1 text-center pb-5 font-weight-bold">Forgot Password</div>
+                <div class="form-g">
+                    <input class="form-control" id="user-mail" type="email" placeholder="請輸入您的會員帳號（E-mail），已接收密碼" name="account" required>
+                </div>
+                <div class="py-4">
+                    <a class="btn-register-switch active btn-switch-block d-inline-block" href="#" data-block=".show-login" data-name=".show-block">Already a member? Sign in here</a>
+                </div>
+                <div class="my-5">
+                    <input class="hide btn btn-outline-primary btn-block show-block show-forgot btn-lg" type="submit" value="送出" style="display:none">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

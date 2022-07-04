@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<!-- 
+    <div class="shop-content" id="app-shop">
+        <grid-mode :largemode="false" v-on:changegrid="swichGridMode"></grid-mode>
+        <sort-app :data="sortConditionDatas" :isload="sortConditionIsLoad"></sort-app>
+        <div class="item-list item-list-box clearfix" :class="{'large-mode': largeMode}">
+
+
+            <div class="item-box">
+                <div class="inner">
+                    <div class="item-img-box">
+                        <a href="http://127.0.0.1:5500/ec_p2_product.html"><img class="img-fluid"
+                                style="width: 200%; "
+                                src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn00932/l/102.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="item-info" style="font-size: 16px;">
+                    <a class="item-name" href="http://127.0.0.1:5500/ec_p2_product.html">
+                        California Gold Nutrition, 金 C 粉，維生素 C，1,000 毫克，240 粒素食膠囊</a><br>
+                    <div class="item-price">
+                        <span class="d-inline-block mr-2 origin-price">NT$980</span>
+                        <span class="sell-price" style="font-weight: bold;">NT$673</span>
+                    </div>
+
+                </div>
+            </div> -->
+    
+
+
+            <!-- JSPPPPPPPPPPPPPPPPPPPPPPPPPP START! -->
+            <div>
+                <c:forEach var="row" items="${select}">
+                    <c:url value="/pages/productHome.view" var="path">
+                        <div><c:param name="productid" value="${row.productid}" />
+                        <div><c:param name="productname" value="${row.productname}" />
+                        <c:param name="suppliesid" value="${row.suppliesid}" /><br>
+                        <c:param name="productimg" value="${row.productimg}" />
+                        <c:param name="standardcost" value="${standardcost}" />
+                        <c:param name="productstock" value="${row.productstock}" />
+                        <c:param name="productdescribe" value="${row.productdescribe}" />
+                        <c:param name="productstatus" value="${row.productstatus}" />
+                    </c:url>
+
+                    <div>
+                        <tr>
+                            <!-- ID -->
+                            <td><a href="${path}">${row.productid}</a></td> <br>
+                            <!-- 圖片 -->
+                            <img src="${row.productimg}"> <br>
+                            <!-- ID -->
+                            <td>${row.productid}</td> <br>
+                            <!-- 品名 -->
+                            <td>${row.productname}</td> <br>
+                            <!-- 供應商ID -->
+                            <td>${row.suppliesid}</td> <br>
+                            <!-- 照片網址 -->
+                            <td>${row.productimg}</td> <br>
+                            <!-- 成本 -->
+                            <td>${row.standardcost}</td> <br>
+                            <!-- 庫存 -->
+                            <td>${row.productstock}</td> <br>
+                            <!-- 商品敘述 -->
+                            <td>${row.productdescribe}</td> <br>
+                            <!-- 商品階段:上架/未上架 -->
+                            <td>${row.productstatus}</td>
+                        </tr>
+                    </div>
+
+
+                    <div class="item-box">
+                        <div class="inner">
+                            <div class="item-img-box">
+                                <a href="http://127.0.0.1:5500/ec_p2_product.html"><img class="img-fluid"
+                                        style="width: 200%; "
+                                        src="${row.productimg}"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="item-info" style="font-size: 16px;">
+                            <a class="item-name" href="http://127.0.0.1:5500/ec_p2_product.html">
+                                ${row.productname}</a><br>
+                            <div class="item-price">
+                                <span class="d-inline-block mr-2 origin-price">${row.standardcost}</span>
+                                <span class="sell-price" style="font-weight: bold;">${row.standardcost}</span>
+                            </div>
+        
+                        </div>
+                    </div>
+
+                </c:forEach>
+            </div>
+
+
+
+
+
+
+
+            <!-- <div class="shop-content" id="app-shop">
+                <grid-mode :largemode="false" v-on:changegrid="swichGridMode"></grid-mode>
+                <sort-app :data="sortConditionDatas" :isload="sortConditionIsLoad"></sort-app>
+                <div class="item-list item-list-box clearfix" :class="{'large-mode': largeMode}">
+
+
+                    <div class="item-box">
+                        <div class="inner">
+                            <div class="item-img-box">
+                                <a href="/pages/productPage"><img class="img-fluid" style="width: 200%;"
+                                        src="${row.productimg}" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="item-info" style="font-size: 16px;">
+
+                            <a class="item-name" href="/pages/productPage">
+                                ${row.productdescribe}</a><br>
+
+                            <div class="item-price">
+                                <span class="d-inline-block mr-2 origin-price">${row.standardcost}</span>
+                                <span class="sell-price" style="font-weight: bold;">${row.standardcost}</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    </tbody> -->
+
+
+
+                    <!-- JSPPPPPPPPPPPPPPPP END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

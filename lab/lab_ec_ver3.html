@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I K care | 線上營養師</title>
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="fb:app_id" content="621265704944567" />
+    <meta property="fb:pages" content="102315771146862" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:title" itemprop="name" content="IKcare | 線上營養師" />
+    <meta property="og:url" itemprop="url" content="https://www.mouggan.com/en-us/" />
+    <meta property="og:image" itemprop="image"
+        content="https://pics.mouggan.com/mouggan/System/3be58cc4-bf99-484b-b28a-0acf853de039.jpg?w=1024&amp;h=1024&amp;mode=max&amp;f.sharpen=50" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="mouggan" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link href="carousel.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.js"></script>
+
+
+    <link href="style.css" rel="stylesheet">
+
+   
+    <style>
+        .carousel-inner {
+            width: fit-content
+        }
+
+        .logo {
+            left: 10px;
+            padding: 10px;
+        }
+
+        .logo2 {
+            width: 50px;
+            padding: 0px;
+        }
+
+        .navbar {
+            background-color: rgb(246, 242, 236);
+        }
+
+        .search {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        .login {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        .cart {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        .dropdown-menu {
+            width: 180px;
+            height: 300px;
+            padding: auto;
+            margin: 0;
+            overflow: auto;
+            overscroll-behavior: contain;
+            -ms-scroll-chaining: contain;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    
+
+    <!-- header導覽列 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <!-- navbar justify-content-center  -->
+            <div class=" container-fluid">
+                <img class="logo" src="logo2.png" height="40">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item mx-auto" style="width: 400px">
+                            <a class="nav-link active" aria-current="page" href="/IKcare2.html"></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">最新</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">熱賣商品</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                品項分類
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">抗衰老和長壽</a></li>
+                                <li><a class="dropdown-item" href="#">泌尿健康</a></li>
+                                <li><a class="dropdown-item" href="#">骨與關節健康</a></li>
+                                <li><a class="dropdown-item" href="#">腦與認知健康</a></li>
+                                <li><a class="dropdown-item" href="#">循環系統健康</a></li>
+                                <li><a class="dropdown-item" href="#">腸道健康</a></li>
+                                <li><a class="dropdown-item" href="#">遠離風寒</a></li>
+                                <li><a class="dropdown-item" href="#">排毒與淨化</a></li>
+                                <li><a class="dropdown-item" href="#">消化健康</a></li>
+                                <li><a class="dropdown-item" href="#">耳部健康</a></li>
+                                <li><a class="dropdown-item" href="#">能量精力</a></li>
+                                <li><a class="dropdown-item" href="#">眼與視覺健康</a></li>
+                                <li><a class="dropdown-item" href="#">頭髮、皮膚和指甲健康</a></li>
+                                <li><a class="dropdown-item" href="#">心臟健康</a></li>
+                                <li><a class="dropdown-item" href="#">免疫健康</a></li>
+                                <li><a class="dropdown-item" href="#">緩解疼痛</a></li>
+                                <li><a class="dropdown-item" href="#">呼吸健康</a></li>
+                                <li><a class="dropdown-item" href="#">季節性過敏</a></li>
+                                <li><a class="dropdown-item" href="#">健康睡眠</a></li>
+                                <li><a class="dropdown-item" href="#">減重塑形</a></li>
+                                <li><a class="dropdown-item" href="#">兒童健康</a></li>
+                                <li><a class="dropdown-item" href="#">男性健康</a></li>
+                                <li><a class="dropdown-item" href="#">女性健康</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">線上營養師</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        
+                        <!-- <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">Search</button> -->
+
+                        <!-- <a type="button"><img class="search" src="search.png"></a> -->
+                        <a type="button"><img class="login" src="login.png"></a>
+                        <a type="button"><img class="cart" src="cart.png"></a>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 中間body -->
+
+    <div><br><br></div>
+    <div><br><br><br></div>
+
+    <div class="row">
+        <!-- 邊距 -->
+        <div class="col-1"></div>
+
+        <!-- 選單 -->
+        <div class="col-2">
+            <div class="container-fluid">
+                <div class="float-bar d-md-block d-none" id="category-sidebar">
+                    <div class="inner h4">
+                        <ul>
+
+                            <li class="mb-4">
+                                <a class="d-inline-block mb-2" style="" href="/en-us/campaign">
+                                    <span class="tag-main-txt">Event</span>
+                                    <span class="tag-sub-txt">優惠活動</span>
+                                </a>
+
+                                <hr>
+
+                                <ol class="ml-3">
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">歡慶開幕 單件免運</span>
+                                            <span class="tag-sub-txt">歡慶開幕 單件免運</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">腸道健康｜任兩件九折</span>
+                                            <span class="tag-sub-txt">腸道健康｜任兩件九折</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">健康睡眠｜買三送一</span>
+                                            <span class="tag-sub-txt">健康睡眠｜買三送一</span>
+                                        </a>
+                                    </li>
+
+                                </ol>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="d-inline-block mb-2" style="" href="/en-us/campaign">
+                                    <span class="tag-main-txt">Category</span>
+                                    <span class="tag-sub-txt">商品分類</span>
+                                </a>
+
+                                <hr>
+
+                                <ol class="ml-3">
+
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">抗衰老和長壽</span>
+                                            <span class="tag-sub-txt">抗衰老和長壽</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">泌尿健康</span>
+                                            <span class="tag-sub-txt">泌尿健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">骨與關節健康</span>
+                                            <span class="tag-sub-txt">骨與關節健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">腦與認知健康</span>
+                                            <span class="tag-sub-txt">腦與認知健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">循環系統健康</span>
+                                            <span class="tag-sub-txt">循環系統健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">腸道健康</span>
+                                            <span class="tag-sub-txt">腸道健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">遠離風寒</span>
+                                            <span class="tag-sub-txt">遠離風寒</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">排毒與淨化</span>
+                                            <span class="tag-sub-txt">排毒與淨化</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">消化健康</span>
+                                            <span class="tag-sub-txt">消化健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">耳部健康</span>
+                                            <span class="tag-sub-txt">耳部健康</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">能量精力</span>
+                                            <span class="tag-sub-txt">能量精力</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">眼與視覺健康</span>
+                                            <span class="tag-sub-txt">眼與視覺健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">頭髮、皮膚和指甲健康</span>
+                                            <span class="tag-sub-txt">頭髮、皮膚和指甲健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">心臟健康</span>
+                                            <span class="tag-sub-txt">心臟健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">免疫健康</span>
+                                            <span class="tag-sub-txt">免疫健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">緩解疼痛</span>
+                                            <span class="tag-sub-txt">緩解疼痛</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">呼吸健康</span>
+                                            <span class="tag-sub-txt">呼吸健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">季節性過敏</span>
+                                            <span class="tag-sub-txt">季節性過敏</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">健康睡眠</span>
+                                            <span class="tag-sub-txt">健康睡眠</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">減重塑形</span>
+                                            <span class="tag-sub-txt">減重塑形</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">兒童健康</span>
+                                            <span class="tag-sub-txt">兒童健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">男性健康</span>
+                                            <span class="tag-sub-txt">男性健康</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <a style="" href="">
+                                            <span class="tag-main-txt">女性健康</span>
+                                            <span class="tag-sub-txt">女性健康</span>
+                                        </a>
+                                    </li>
+
+
+
+
+                                </ol>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 內容 -->
+        <div class="col-8">
+            <div class="row">
+
+
+                <div class="item-box">
+                    <div class="inner">
+                        <div class="item-img-box">
+                            <a href="/en-us/market/n/1135?c=2327"><img class="img-fluid" style="width: 200%; "
+                                    src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn02000/v/10.jpg"
+                                    alt="後綁帶傘狀長洋裝"></a>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <a class="item-name" href="/en-us/market/n/1135?c=2327">後綁帶傘狀長洋裝</a>
+                        <div class="item-price">
+                            <span class="d-inline-block mr-2 origin-price">NT$1,680</span>
+                            <span class="sell-price">NT$1,480</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="item-box">
+                    <div class="inner">
+                        <div class="item-img-box">
+                            <a href="/en-us/market/n/1135?c=2328"><img class="img-fluid"
+                                    src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn02000/v/10.jpg"
+                                    alt="後綁帶傘狀長洋裝"></a>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <a class="item-name" href="/en-us/market/n/1135?c=2328">後綁帶傘狀長洋裝</a>
+                        <div class="item-price">
+                            <span class="d-inline-block mr-2 origin-price">NT$1,680</span>
+                            <span class="sell-price">NT$1,480</span>
+                        </div>
+                        <wish-btn :wishactive="&#39;False&#39;" :custommarketid="'MT1M1135CL2328SZ_'"></wish-btn>
+
+                    </div>
+                </div>
+
+                <div class="item-box">
+                    <div class="inner">
+                        <div class="item-img-box">
+                            <a href="/en-us/market/n/1143?c=2344"><img class="img-fluid"
+                                    src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn02000/v/10.jpg"
+                                    alt="兩用翻領長袖襯衫"></a>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <a class="item-name" href="/en-us/market/n/1143?c=2344">兩用翻領長袖襯衫</a>
+                        <div class="item-price">
+                            <span class="d-inline-block mr-2 origin-price">NT$1,480</span>
+                            <span class="sell-price">NT$1,280</span>
+                        </div>
+                        <wish-btn :wishactive="&#39;False&#39;" :custommarketid="'MT1M1143CL2344SZ_'"></wish-btn>
+
+                    </div>
+                </div>
+
+                <div class="item-box">
+                    <div class="inner">
+                        <div class="item-img-box">
+                            <a href="/en-us/market/n/1143?c=2344"><img class="img-fluid"
+                                    src="https://pics.mouggan.com/mouggan/ProductCovers/5f423ec2-3bd8-479c-a5bb-268d7bc2eee9_w720_h960.jpg"
+                                    alt="兩用翻領長袖襯衫"></a>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <a class="item-name" href="/en-us/market/n/1143?c=2344">兩用翻領長袖襯衫</a>
+                        <div class="item-price">
+                            <span class="d-inline-block mr-2 origin-price">NT$1,480</span>
+                            <span class="sell-price">NT$1,280</span>
+                        </div>
+                        <wish-btn :wishactive="&#39;False&#39;" :custommarketid="'MT1M1143CL2344SZ_'"></wish-btn>
+
+                    </div>
+                </div>
+
+                <div class="item-box">
+                    <div class="inner">
+                        <div class="item-img-box">
+                            <a href="/en-us/market/n/1143?c=2344"><img class="img-fluid"
+                                    src="https://pics.mouggan.com/mouggan/ProductCovers/5f423ec2-3bd8-479c-a5bb-268d7bc2eee9_w720_h960.jpg"
+                                    alt="兩用翻領長袖襯衫"></a>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <a class="item-name" href="/en-us/market/n/1143?c=2344">兩用翻領長袖襯衫</a>
+                        <div class="item-price">
+                            <span class="d-inline-block mr-2 origin-price">NT$1,480</span>
+                            <span class="sell-price">NT$1,280</span>
+                        </div>
+                        <wish-btn :wishactive="&#39;False&#39;" :custommarketid="'MT1M1143CL2344SZ_'"></wish-btn>
+
+                    </div>
+                </div>
+
+                <div class="item-box">
+                    <div class="inner">
+                        <div class="item-img-box">
+                            <a href="/en-us/market/n/1143?c=2344"><img class="img-fluid"
+                                    src="https://pics.mouggan.com/mouggan/ProductCovers/5f423ec2-3bd8-479c-a5bb-268d7bc2eee9_w720_h960.jpg"
+                                    alt="兩用翻領長袖襯衫"></a>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <a class="item-name" href="/en-us/market/n/1143?c=2344">兩用翻領長袖襯衫</a>
+                        <div class="item-price">
+                            <span class="d-inline-block mr-2 origin-price">NT$1,480</span>
+                            <span class="sell-price">NT$1,280</span>
+                        </div>
+                        <wish-btn :wishactive="&#39;False&#39;" :custommarketid="'MT1M1143CL2344SZ_'"></wish-btn>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 邊距 -->
+        <div class="col-1"></div>
+    </div>
+
+    <div><br><br><br></div>
+
+    <!-- FOOTER -->
+    <footer style="background-color: #eee6d3;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <!-- <h5 class="mb-3 text-dark">footer content</h5> -->
+                    <!-- <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa 
+              corporis vitae repudiandae aliquam voluptatem veniam, 
+              est atque cumque eum delectus sint!
+            </p> -->
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="mb-3 text-dark">購物資訊</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1">
+                            <a href="#!" style="color: #4f4f4f;">FAQs</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#!" style="color: #4f4f4f;">How to buy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3 text-dark">I K Care</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1">
+                            <a href="#!" style="color: #4f4f4f;">關於我們</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#!" style="color: #4f4f4f;">隱私權政策</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="mb-3 text-dark">相關網站</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1">
+                            <a href="#!" style="color: #4f4f4f;">國民飲食指標</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#!" style="color: #4f4f4f;">營養小知識</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="mb-3 text-dark">聯絡我們</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1">
+                            <a href="#!" style="color: #4f4f4f;">service@ikcare.com</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#!" style="color: #4f4f4f;"><img src="facebook_logos_PNG19753.png" type="button"
+                                    width="30px"></a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#!" style="color: #4f4f4f;"><img src="instagram.png" type="button"
+                                    width="30px"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="IKcare2.html">IKcare.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- End of .container -->
+    </main>
+    
+
+   
+       <!-- 頁碼從...變成箭頭 > -->
+       <script>
+        window.PageCount = 5;
+        window.OrderMode = 1;
+    </script>
+
+     <!-- 最重要的部分 -->
+    <!-- 出現上方縮小navbar & 頁碼 & 縮小後點三條線出現側欄選單 & 購物車畫面 -->
+    <!-- 排序 & 進階篩選 & 商品顯示方式 -->
+    <script type="text/javascript" src="https://static.tpx.tw/sff/mouggan/js/shop.js?V=20220512v1"></script>
+
+
+
+</body>
+
+</html>

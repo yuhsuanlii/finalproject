@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="617180006352-4s5jdjocgpp959q7dslugemacr9vhg3t.apps.googleusercontent.com">
+
+</head>
+
+<body>
+
+
+    <button> 
+        <div id="google-sign-in-button">google</div>
+     </button>
+       
+      
+      
+      <script>
+      export default {
+        name: 'GoogleSignInButton',
+        props: {
+          width: {
+            type: String,
+            default: null
+          },
+          height: {
+            type: String,
+            default: null
+          }
+        },
+        mounted() {
+          window.gapi.signin2.render('google-sign-in-button', {
+            scope: 'profile email',
+            width: this.width,
+            height: this.height,
+            longtitle: true,
+            theme: 'light',
+            onsuccess: this.signIn,
+            onfailure: () => {}
+          });
+        },
+        methods: {
+          signIn(googleUser) {
+            const id_token = googleUser.getAuthResponse().id_token;
+            this.$emit('sign-in', id_token);
+          }
+        }
+      };
+      </script>
+
+
+
+
+
+
+
+</body>
+
+<script>
+    var startApp = function () {
+        gapi.load('auth2', function () {
+            // Retrieve the singleton for the GoogleAuth library and set up the client.
+            auth2 = gapi.auth2.init({
+                client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+                cookiepolicy: 'single_host_origin',
+                // Request scopes in addition to 'profile' and 'email'
+                //scope: 'additional_scope'
+            });
+            attachSignin(document.getElementById('customBtn'));
+        });
+    };
+</script>
+
+<script>
+    gapi.signin2.render('my-signin2', {
+  'scope': 'profile email',
+  'width': 240,
+  'height': 50,
+  'longtitle': true,
+  'theme': 'dark',
+  'onsuccess': onSuccess,
+  'onfailure': onFailure
+});
+
+</script>
+
+
+
+
+</html>

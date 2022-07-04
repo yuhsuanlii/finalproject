@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>IKcare | 線上營養師</title>
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="description" property="og:description" itemprop="description" content="紀錄飲食，線上營養諮詢。" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:title" itemprop="name" content="IKcare | 線上營養師" />
+    <meta property="og:url" itemprop="url" content="#" />
+    <meta property="og:image" itemprop="image" content="logo2.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ikcare" />
+
+    <link rel="canonical" href="#" />
+    <!-- <link href="https://static.tpx.tw/sff/mouggan/css/main.css?v=20220518v1" rel="stylesheet"> -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://static.tpx.tw/sff/mouggan/css/rwd-content.css?v=20220518v1" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<!-- 若需相容 IE11，要加載 Promise Polyfill-->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+</head>
+
+<body id="page-shop" class="style-lang-en">
+
+
+    <!-- 中間頁面 -->
+
+ 
+    <a class="btn btn-lg mx-1 btn-outline-primary my-2" href=""
+    onclick="alertTest();">
+    <span class="d-inline-block align-middle" style="font-size: 16px;">完成訂購</span>
+</a>
+
+
+
+
+    <!-- script -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type=text/javascript
+        src="https://static.tpx.tw/sff/mouggan/static/libs/js/vendors.js?V=20220512v1"></script>
+
+    <!-- <script type="text/javascript" src="https://static.tpx.tw/sff/mouggan/js/cart.js?v=20220512v1"></script> -->
+    <script type="text/javascript" src="/lab_p7.js"></script>
+
+
+    <script>
+        function myfunc() {
+
+            alert("恭喜您已完成訂購！");
+           
+
+        }
+    </script>
+
+       <script>
+        function alertTest() {
+            Swal.fire(
+                "查詢作業失敗", //標題 
+                "您所輸入的序號不存在或是系統被玩壞了!", //訊息內容(可省略)
+                "error" //圖示(可省略) success/info/warning/error/question
+                //圖示範例：https://sweetalert2.github.io/#icons
+            );
+        }
+        function confirmTest() {
+            Swal.fire({
+                title: "操作確認",
+                text: "請點選你想按的按鈕",
+                showCancelButton: true
+            }).then(function (result) {
+                if (result.value) {
+                    Swal.fire("您按了OK");
+                }
+                else {
+                    Swal.fire("您選擇了Cancel");
+                }
+            });
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

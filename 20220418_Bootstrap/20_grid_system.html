@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.js"></script>
+</head>
+
+<body>
+
+    <h4>Grid System</h4>
+    <p><a href='https://getbootstrap.com/docs/5.1/layout/grid/#grid-options'>https://getbootstrap.com/docs/5.1/layout/grid/#grid-options</a></p>
+
+
+    <!-- 10. 請試著透過 col-* 或者 row-cols-* 的設定，將畫面平分成四欄 -->
+    <!-- .container > .row > 依照需求切 .col-? -->
+    <!-- container 控制左右要不要留白 -->
+    <!-- col-? 超過12會自己折行 -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3 bg-danger">1</div>
+            <div class="col-3 bg-dark">2</div>
+            <div class="col-3 bg-warning">3</div>
+            <div class="col-3 bg-success">4</div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <!-- div.row.row-clos-4 -->
+        <div class="row row-cols-4">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- 20. *RWD響應式網頁* 請試著透過 col-裝置-* 設定
+             a. 當瀏覽器寬度 ≥992px 時，設定畫面一列六欄 .col-lg-
+             b. 當瀏覽器寬度 ≥768px 時，設定畫面一列兩欄 .col-md- -->
+    <div class="row">
+        <div class="col-lg-2 col-md-6 bg-success">1</div>
+        <div class="col-lg-2 col-md-6">2</div>
+        <div class="col-lg-2 col-md-6 bg-warning">3</div>
+        <div class="col-lg-2 col-md-6">4</div>
+        <div class="col-lg-2 col-md-6 bg-danger">5</div>
+        <div class="col-lg-2 col-md-6">6</div>
+    </div>
+    
+    <hr>
+
+    <!-- 30. 觀察現有的網頁，進行巢狀堆疊Grid的練習 -->
+
+    <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-5 bg-danger">A</div>
+            <div class="col-5 bg-warning">B</div>
+        
+            <div class="col-2">
+                <div class="row">
+                    <div class="col-12 bg-dark">C</div>
+                </div>
+                <div class="row">
+                    <div class="col-12 bg-success">D</div>
+                </div>
+            </div>
+            
+        </div>
+    <!-- </div> -->
+
+
+</body>
+
+</html>
